@@ -82,8 +82,7 @@ int main(int argc, char *argv[]){
   Vec cx=Vec(w*.5135/h), cy=(cx%cam.d).norm()*.5135, r, *c=new Vec[w*h];
 #pragma omp parallel for schedule(dynamic, 1) private(r)       // OpenMP
   for (int y=0; y<h; y++){                       // Loop over image rows
-    // *** Commented out for Visual Studio, fprintf is not thread-safe
-    //fprintf(stderr,"\rRendering (%d spp) %5.2f%%",samps*4,100.*y/(h-1));
+    fprintf(stderr,"\rRendering (%d spp) %5.2f%%",samps*4,100.*y/(h-1));
     unsigned short Xi[3]={0,0,y*y*y}; // *** Moved outside for VS2022
     for (unsigned short x=0; x<w; x++)   // Loop cols
       for (int sy=0, i=(h-y-1)*w+x; sy<2; sy++)     // 2x2 subpixel rows
