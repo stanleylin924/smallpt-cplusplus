@@ -4,7 +4,7 @@ smallpt-cplusplus
 smallpt: Global Illumination in 99 lines of C++ 
 (http://www.kevinbeason.com/smallpt/)
 
-This is a simple 'port' of Kevin Beason's smallpt to make it run on Windows via Visual C++ and Visual Studio 2012. Please visit Kevin's site for more information.  
+This is a simple 'port' of Kevin Beason's smallpt to make it run on Windows via Visual C++ and Visual Studio 2022. Please visit Kevin's site for more information.  
 
 My purpose is to have a comparison point as I'm going to port the code over to C# (http://github.com/randyridge/smallpt-csharp) and refactor for my own amusement and education...  This is similar to what Ronald Chen did in Java (http://pyrolistical.github.com/smallpt/).
 

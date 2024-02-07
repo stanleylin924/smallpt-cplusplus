@@ -1,20 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smallpt", "smallpt\smallpt.vcxproj", "{C85194E2-53AB-486A-9150-B955C5C98863}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smallpt", "smallpt\smallpt.vcxproj", "{D9B656E3-9511-48C1-812F-11CA576B151E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Release|Win32 = Release|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C85194E2-53AB-486A-9150-B955C5C98863}.Debug|Win32.ActiveCfg = Debug|Win32
-		{C85194E2-53AB-486A-9150-B955C5C98863}.Debug|Win32.Build.0 = Debug|Win32
-		{C85194E2-53AB-486A-9150-B955C5C98863}.Release|Win32.ActiveCfg = Release|Win32
-		{C85194E2-53AB-486A-9150-B955C5C98863}.Release|Win32.Build.0 = Release|Win32
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Debug|x64.ActiveCfg = Debug|x64
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Debug|x64.Build.0 = Debug|x64
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Debug|x86.Build.0 = Debug|Win32
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Release|x64.ActiveCfg = Release|x64
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Release|x64.Build.0 = Release|x64
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Release|x86.ActiveCfg = Release|Win32
+		{D9B656E3-9511-48C1-812F-11CA576B151E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B236A720-1AE0-4174-8C08-F343DA99615B}
 	EndGlobalSection
 EndGlobal
