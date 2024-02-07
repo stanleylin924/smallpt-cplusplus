@@ -1,9 +1,9 @@
 #include <math.h>   // smallpt, a Path Tracer by Kevin Beason, 2008
 #include <stdlib.h> // Make : g++ -O3 -fopenmp smallpt.cpp -o smallpt
 #include <stdio.h>  //        Remove "-fopenmp" for g++ version < 4.2
-#define M_PI 3.1415926535897932384626433832795// *** Added for VS2012
-double erand48(unsigned short seed[3]){return (double)rand()
-/ (double)RAND_MAX;}// *** Added for VS2012
+#define M_PI 3.1415926535897932384626433832795 // Added for VS2022
+double erand48(unsigned short seed[3]) {
+  return (double)rand()/(double)RAND_MAX; } // Added for VS2022
 struct Vec {        // Usage: time ./smallpt 5000 && xv image.ppm
   double x, y, z;                  // position, also color (r,g,b)
   Vec(double x_=0, double y_=0, double z_=0){ x=x_; y=y_; z=z_; }
@@ -84,7 +84,7 @@ int main(int argc, char *argv[]){
   for (int y=0; y<h; y++){                       // Loop over image rows
     // *** Commented out for Visual Studio, fprintf is not thread-safe
     //fprintf(stderr,"\rRendering (%d spp) %5.2f%%",samps*4,100.*y/(h-1));
-    unsigned short Xi[3]={0,0,y*y*y}; // *** Moved outside for VS2012
+    unsigned short Xi[3]={0,0,y*y*y}; // *** Moved outside for VS2022
     for (unsigned short x=0; x<w; x++)   // Loop cols
       for (int sy=0, i=(h-y-1)*w+x; sy<2; sy++)     // 2x2 subpixel rows
         for (int sx=0; sx<2; sx++, r=Vec()){        // 2x2 subpixel cols
